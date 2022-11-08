@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
 .center{
     text-align: center;
 }
@@ -37,16 +41,33 @@ header{
 #main-btn{
     width: 302px;
     height: 100px;
-    padding: auto;
+    padding: 0;
     position: absolute;
     right: 62.95px;
     bottom: 36.75px;
-    background-color: #FBC02D;
+    background-color: #F8A82F;
     border-radius: 50px;
+    border-width: 0 0 5px 0;
+    border-color: #f8eb2f;
+    cursor: pointer;
 }
+#main-btn:hover{
+    background-color: #FBC02D;
+    border-width: 0 0 2px 0;
+}
+
 #main-p{
     line-height: 100px;
+    width: 302px;
     margin: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 0px 0px #000000;
+}
+#main-p:hover{
+    text-shadow: none;
+    padding-top: 2px;
 }
 #contents{
     width: 100%;
@@ -59,11 +80,13 @@ header{
     margin-top: 0px;
     margin-left: 60px;
     margin-bottom: 0px;
+    text-shadow: 1px 2px 3px #ffffff;
 
 }
 #class{
     margin-top: 50px;
 }
+
 .cicle{
     width: 64px;
     height: 64px;
@@ -79,6 +102,8 @@ header{
     text-align: center;
     color: #ffffff;
     margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
 }
 .inline{
     display: inline;
@@ -113,26 +138,30 @@ header{
     height: 250px;
     margin-left: 90px;
     margin-right: 90px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-#box{
+#box1{
     width: 560px;
     position: relative;
+    display: flex;
+}
+#box2{
+    padding-right:45px ;
 }
 #box-picture{
    position: absolute;
    top: 0;
    bottom: 0;
-   left: 270px;
-   margin: 0;
+   left: 250px;
+   margin: auto;
 }
 #box-png{
     position: absolute;
     bottom: 20px;
-    left: 75px;
+    left: 90px;
     margin: auto;
 }
 
@@ -166,6 +195,7 @@ header{
     margin: 0;
     padding: 0;
     line-height: 100px;
+    font-size: smaller;
   }
 
 #proposition{
@@ -179,6 +209,7 @@ header{
     margin-top: 0px;
     margin-left: 60px;
     margin-bottom: 0px;
+    text-shadow: 1px 2px 3px #ffffff;
 }
 .text{
     width: 560px;
@@ -189,6 +220,7 @@ header{
 }
 #last-container{
     margin-bottom: 200px;
+    display: flex;
 }
 #last-chapter{
     margin-bottom: 0px;
@@ -211,10 +243,14 @@ header{
 #main2-h1{
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 90px;
     resize: 0;
     left: 0;
     margin: auto;
+    text-shadow: 6px 6px 6px #Ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    color:#000000 ;
 }
 #main2-button{
     position: absolute;
@@ -223,13 +259,32 @@ header{
     left: 0;
     margin: auto;
     width: 250px;
-    height: 64px;
-    background-color: #FBC02D;
+    height: 90px;
+    padding: 0;
+    background-color: #F8A82F;
     border-radius: 50px;
+    border-width: 0 0 6px 0;
+    border-color: #f8eb2f;
+    cursor: pointer;
+}
+#main2-button:hover{
+    background-color: #FBC02D;
+    border-width: 0 0 2px 0;;
 }
 #main2-button h3{
     text-align: center;
     color: #ffffff;
+    text-shadow: 1px 0px 0px #000000;
+    line-height: 90px;
+    width: 250px;
+    margin: 0px;
+}
+
+
+
+#main2-button h3:hover{
+    text-shadow: none;
+    padding-top: 2px;
 }
 .background{
     background-image: url("./img/children.jpg");
@@ -245,8 +300,9 @@ header{
 }
 #study-h2{
     text-align: center;
-    padding: auto;
-    margin:0px
+    padding: 25px 0 0;
+    margin:0 0 15px;
+    text-shadow: 2px 2px 2px  #ffffff;
 }
 #box{
     position: absolute;
@@ -267,22 +323,36 @@ header{
     height: 150px;
     border-radius: 50%;
     margin: auto;
+    transition: 1s;
+}
+.study-c:hover{
+    transform: scale(1.1,1.1);
 }
 #html{
     background-color: #C8F8DE;
     overflow:hidden;
 }
+#html:hover{
+    background-color: #70ed09;
+}
 #css{
     background-color: #CAEEFA;
 }
+#css:hover{
+    background-color: #5dd5fd;
+}
 #java{
     background-color: #FFB5B9;
+}
+#java:hover{
+    background-color: #fc5059;
 }
 .st-c-h2{
     margin-top: 32px;
     margin-bottom: 0px;
     text-align: center;
     font-size: 32px;
+    text-shadow: 2px 2px 2px  #ffffff;
 }
 .st-c-p{
     margin: 0px;
@@ -299,13 +369,30 @@ header{
     height: 100px;
     background: rgba(251, 192, 45, 0.5);
     border-radius: 50px;
+    transition: 0.3s;
+    border:none;
+    padding: 0;
+    cursor: pointer;
 }
+#study-b:hover{
+    background-color: #ffffff;
+    border: 3px solid #F8A82F;
+    border-color: #F8A82F;
+}
+
 #s-b-h2{
     text-align: center;
     line-height: 100px;
+    width: 280px;
     margin: 0px;
-    font-size: 16px;
+    font-size: 18px;
+    color: #ffffff;
+    transition: 0.3s;
 }
+#s-b-h2:hover{
+    color: #F8A82F;
+}
+
 #cm-container{
     margin: 0px;
     overflow:hidden;
@@ -332,3 +419,290 @@ footer{
     margin: auto;
     right: 0;
 }
+#javascript{
+    margin-top: 32px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 2px 2px 2px  #ffffff;
+}
+
+@media(max-width:500px){
+    #contents-h1{
+        margin: 0;
+        text-align: center;
+    }
+    .cicle{
+        width: 32px;
+        height: 32px;
+        margin-left: 22px;
+    }
+    .circle-num{
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 18px;
+    }
+    .text{
+        display: block;
+        width:100%;
+    }
+    .pic1{
+        width: 100%;
+        object-fit: contain;
+    }
+    #box{
+        width: 280px;
+        height: 280px;
+        object-fit: contain;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .inline-block{
+        display: block;
+    
+    }
+    .textbox{
+        width: 200px;
+        height: auto;
+        border-radius: 30px;
+        display: block;
+        position: relative;
+        background: rgba(251, 192, 45, 0.5);
+        overflow: hidden;      
+        margin-top: 40px;
+   
+       text-align: center;
+    }
+    .textbox > p{
+        font-size:12px ;
+    }
+    .container{
+        height: 300px;
+        width: auto;
+        display: block;
+        justify-content: space-between;
+        padding: auto;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    #last-container{
+        width: auto;
+        height: 300px;
+        display: block;
+        margin-top: 20px;
+        margin:auto;
+        margin-bottom: 0;
+    }
+    #box1{
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+    }
+    #box2{
+        height: 150px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    #box-picture{
+        width: 160px;
+        height: 100px;
+        object-fit: contain;
+    }
+    #box-png{
+        width: 50px;
+        height: 50px;
+        left: 35%;
+    }
+    .background{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    #cm{
+        height: 170px;
+        line-height: 170px;
+        margin: auto;
+        font-size: 22px;
+        text-align: center;
+     }
+    .chapter .cicle{
+        margin-left: 0;
+    }
+
+    .text{
+        margin-top: 25px;
+        font-size: 12px;
+    }
+    .study-c{
+        width: 100px;
+        height: 100px;
+    }
+    .st-c-h2{
+        margin-top: 22px;
+        font-size: 22px;
+    }
+    .st-c-p{
+        font-size: 9px;
+    }
+    #javascript{
+        margin-top: 17px;
+        font-size: 19px;
+    }
+    #main2-h1{
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        resize: 0;
+        left: 0;
+        margin: auto;
+        text-shadow: 6px 6px 6px #Ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        color:#000000 ;
+    }
+    #main2-button{
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 170px;
+        height: 50px;
+        padding: 0;
+        background-color: #F8A82F;
+        border-radius: 20px;
+        border-width: 0 0 6px 0;
+        border-color: #f8eb2f;
+        cursor: pointer;
+    }
+    #main2-button h3{
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 1px 0px 0px #000000;
+        line-height: 50px;
+        width: 170px;
+        margin: 0px;
+        font-size: 12px;
+    }
+    #proposition-h1{
+        margin: 0;
+        text-align: center;
+    }
+    #study-b{
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        width: 190px;
+        height: 70px;
+        background: rgba(251, 192, 45, 0.5);
+        border-radius: 350px;
+        transition: 0.3s;
+        border:none;
+        padding: 0;
+        cursor: pointer;
+    }
+    #s-b-h2{
+        text-align: center;
+        line-height: 70px;
+        width: 190px;
+        margin: 0px;
+        font-size: 15px;
+        color: #ffffff;
+        transition: 0.3s;
+    }
+    #study{
+        height: 550px;
+    }
+    #main{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #mainpicture{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    #main-div{
+        width: 200px;
+        height: 180px;
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+    }
+    #main-h2{
+        top: 30px;
+        right: 35px;
+        width: 130px;
+        height: 40px;
+    }
+    #main-btn{
+        width: 130px;
+        height: 45px;
+        right: 35px;
+        bottom: 10px;
+  
+    }
+    #main-p{
+        line-height: 45px;
+        width: 130px;
+        margin: 0px;
+        font-size: 12px;
+    }
+    .balloon1 {
+        position: relative;
+        display: inline-block;
+        margin-left: 65px;
+        margin-top: 0px;
+        padding: 7px 15px;
+        height: 45px;
+        width: 100px;
+
+        border-radius: 50%;
+      }
+     .balloon1>p{
+       line-height: 12px;
+        font-size: 1px;
+        margin: 0;
+        padding: 0;
+     } 
+      
+      .balloon1:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-top: 15px solid #ffffff;
+      }
+    header{
+        height: 40px;
+    }
+    header>img{
+        height: 40px
+    }
+    footer{
+        height: 40px;
+    }
+    footer>img{
+        height: 40px;
+    }
+    
+
+}
+
